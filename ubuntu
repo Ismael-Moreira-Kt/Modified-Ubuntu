@@ -2,16 +2,18 @@
 
 
 
-source './src/check_sudo'
+source './src/check_sudo.sh'
+source './src/development_setup.sh'
 
 
 
 
 
-display_menu() {
+function display_menu() {
     echo -e "\n\n------------------------- Modified Ubuntu -------------------------\n"
-    echo "1) Installing Modifications"
-    echo "2) See the packages to be installed"
+    echo "1) Development setup"
+    echo "2) Gaming setup"
+    echo "3) Standard setup"
     echo "0) Exit"
     echo -e "\n\n-------------------------------------------------------------------\n"
 }
@@ -30,7 +32,7 @@ while true; do
     read -p "Enter the option number: " option
 
     case $option in
-        1) echo "Hello World!";;
+        1) development_setup;;
         2) echo "Hello second World!";;
         0) echo "Exiting..."; exit 0;;
         *) echo "Invalid input. Please try again.";;
