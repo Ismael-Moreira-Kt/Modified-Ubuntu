@@ -1,0 +1,21 @@
+#!/bin/bash
+
+
+
+
+
+display_menu() {
+    echo -e "\n\n------------------------- Modified Ubuntu -------------------------\n"
+    echo "1) Installing Modifications"
+    echo "2) See the packages to be installed"
+    echo "0) Exit"
+    echo -e "\n\n-------------------------------------------------------------------\n"
+}
+
+
+
+
+
+while true; do
+    display_menu
+done
