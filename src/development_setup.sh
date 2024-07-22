@@ -58,6 +58,17 @@ function installation() {
     git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0
     echo '. "$HOME/.asdf/asdf.sh"' >> ~/.bashrc
     echo '. "$HOME/.asdf/completions/asdf.bash"' >> ~/.bashrc
+
+    echo -e "\n\n"
+    echo "Installing other tools..."
+    sudo apt install -y cmake docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin vagrant virtualbox virtualbox-ext-pack code postgresql mongodb-org nginx htop glances logrotate valgrind strace wireshark jenkins wine64 flatpak
+    
+    echo -e "\n\n"
+    echo "Starting and enabling services..."
+    sudo systemctl start postgresql
+    sudo systemctl enable postgresql
+    sudo systemctl start mongod
+    sudo systemctl enable mongod
 }
 
 
