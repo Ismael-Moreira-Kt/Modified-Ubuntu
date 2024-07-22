@@ -26,4 +26,13 @@ check_sudo
 
 while true; do
     display_menu
+
+    read -p "Enter the option number: " option
+
+    case $option in
+        1) echo "Hello World!";;
+        2) echo "Hello second World!";;
+        0) echo "Exiting..."; exit 0;;
+        *) echo "Invalid input. Please try again.";;
+    esac
 done
