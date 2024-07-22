@@ -2,6 +2,10 @@
 
 
 
+source './src/check_sudo'
+
+
+
 
 
 display_menu() {
@@ -13,6 +17,10 @@ display_menu() {
 }
 
 
+
+
+
+check_sudo
 
 
 
