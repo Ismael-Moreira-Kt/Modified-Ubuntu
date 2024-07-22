@@ -1,9 +1,3 @@
-#!/bin/bash
-
-
-
-
-
 function preparing_installation() {
     echo -e "\n\n"
     echo "Updating the package list..."
@@ -49,6 +43,21 @@ function preparing_installation() {
     echo "Configuring Jenkins..."
     sudo wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
     echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/" | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+}
+
+
+
+function installation() {
+    echo -e "\n\n"
+    echo "Updating the package list..."
+    sudo apt update -y && sudo apt upgrade -y 
+    sudo apt autoremove -y && sudo apt autoclean -y
+    
+    echo -e "\n\n"
+    echo "Installing ASDF..."
+    git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0
+    echo '. "$HOME/.asdf/asdf.sh"' >> ~/.bashrc
+    echo '. "$HOME/.asdf/completions/asdf.bash"' >> ~/.bashrc
 }
 
 
