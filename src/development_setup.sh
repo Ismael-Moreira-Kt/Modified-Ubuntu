@@ -69,6 +69,14 @@ function installation() {
     sudo systemctl enable postgresql
     sudo systemctl start mongod
     sudo systemctl enable mongod
+
+
+    echo -e "\n\n"
+    echo "Configuring the firewall..."
+    sudo apt install -y ufw
+    sudo ufw enable 
+    sudo ufw default allow incoming
+    sudo ufw default deny outgoing
 }
 
 
