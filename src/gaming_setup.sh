@@ -30,6 +30,9 @@ function installation() {
 
     echo "Installing Steam..."
     flatpak install flathub com.valvesoftware.Steam
+
+    echo "Installing Lutris..."
+    flatpak install flathub net.lutris.Lutris
 }
 
 
