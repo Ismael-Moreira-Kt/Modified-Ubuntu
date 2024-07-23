@@ -61,6 +61,10 @@ function installation() {
     echo -e "\n\n"
     echo "Installing Inkscape..."
     flatpak install flathub org.inkscape.Inkscape
+
+    echo -e "\n\n"
+    echo "Installing VLC..."
+    flatpak install flathub org.videolan.VLC
 }
 
 
