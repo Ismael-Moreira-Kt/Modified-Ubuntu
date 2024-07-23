@@ -7,6 +7,10 @@ function preparing_installation() {
     echo -e "\n\n"
     echo "Adding repositories..."
     sudo add-apt-repository ppa:atareao/atareao
+
+    echo -e "\n\n"
+    echo "Installing snap..."
+    sudo apt install snapd
 }
 
 
