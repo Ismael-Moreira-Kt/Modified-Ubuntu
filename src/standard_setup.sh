@@ -49,6 +49,10 @@ function installation() {
     echo -e "\n\n"
     echo "Installing KeePassXC..."
     flatpak install flathub org.keepassxc.KeePassXC
+
+    echo -e "\n\n"
+    echo "Installing Okular..."
+    flatpak install flathub org.kde.okular
 }
 
 
