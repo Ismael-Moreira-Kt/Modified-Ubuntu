@@ -33,6 +33,10 @@ function installation() {
     echo -e "\n\n"
     echo "Installing Snapd..."
     sudo apt install snapd
+
+    echo -e "\n\n"
+    echo "Installing Telegram..."
+    sudo snap install telegram-desktop
 }
 
 
