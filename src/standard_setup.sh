@@ -17,6 +17,10 @@ function installation() {
     echo "Installing flatpak..."
     sudo apt install -y flatpak
     flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+    echo -e "\n\n"
+    echo "Installing Chrome..."
+    flatpak install flathub com.google.Chrome
 }
 
 
