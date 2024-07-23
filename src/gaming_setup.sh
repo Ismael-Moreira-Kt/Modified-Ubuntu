@@ -24,9 +24,12 @@ function installation() {
     echo "Installing CPU-G..."
     sudo apt install -y cpu-g
 
-    echo "Installing flatpak"
+    echo "Installing flatpak..."
     sudo apt install -y flatpak
     flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+    echo "Installing Steam..."
+    flatpak install flathub com.valvesoftware.Steam
 }
 
 
