@@ -70,8 +70,12 @@ function installation() {
     systemctl --user start pipewire.socket pipewire-pulse.socket
 
     echo -e "\n\n"
-    echo "Installing Goverlay, Vkbaslt and MangoHud..."
+    echo "Installing Goverlay, Vkbasalt and MangoHud..."
     sudo apt install -y mangohud vkbasalt goverlay 
+
+    echo -e "\n\n"
+    echo "Installing GameMode"
+    sudo apt install -y gamemode
 }
 
 
