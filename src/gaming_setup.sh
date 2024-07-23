@@ -3,6 +3,10 @@ function preparing_installation() {
     echo "Updating the package list..."
     sudo apt update -y && sudo apt upgrade -y 
     sudo apt autoremove -y && sudo apt autoclean -y
+
+    echo -e "\n\n"
+    echo "Adding repositories..."
+    sudo add-apt-repository ppa:atareao/atareao
 }
 
 
@@ -12,6 +16,9 @@ function installation() {
     echo "Updating the package list..."
     sudo apt update -y && sudo apt upgrade -y 
     sudo apt autoremove -y && sudo apt autoclean -y
+
+    echo "Installing CPU-G..."
+    sudo apt install -y cpu-g
 }
 
 
