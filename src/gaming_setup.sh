@@ -103,7 +103,7 @@ function installation() {
 
         [gpu]
         apply_gpu_optimizations = true
-    ' >> ~./config/gamemode.ini
+    ' >> ~/.config/gamemode.ini
 
     echo -e "\n\n"
     echo "Installing RetroArch..."
