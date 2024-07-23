@@ -46,6 +46,9 @@ function installation() {
     wget  https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
     chmod +x winetricks 
     sudo mv -v winetricks /usr/local/bin
+
+    echo "Installing Bottles..."
+    flatpak install flathub com.usebottles.bottles
 }
 
 
