@@ -1,12 +1,3 @@
-function preparing_installation() { 
-    echo -e "\n\n"
-    echo "Updating the package list..."
-    sudo apt update -y && sudo apt upgrade -y 
-    sudo apt autoremove -y && sudo apt autoclean -y
-}
-
-
-
 function installation() { 
     echo -e "\n\n"
     echo "Updating the package list..."
@@ -85,17 +76,19 @@ function installation() {
     echo -e "\n\n"
     echo "Installing BleachBit..."
     flatpak install flathub org.bleachbit.BleachBit
+
+    echo -e "\n\n"
+    echo "Configuring the firewall..."
+    sudo apt install -y ufw
+    sudo ufw enable 
+    sudo ufw default allow incoming
+    sudo ufw default deny outgoing
 }
 
 
 
 function standard_setup() {
     echo -e "\n\n"
-    echo "Preparing for installation..."
-    preparing_installation
-    
-    clear
-    
     echo "Installing..."
     installation
 }
