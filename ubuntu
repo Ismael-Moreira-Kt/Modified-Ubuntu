@@ -5,6 +5,7 @@
 source './src/check_sudo.sh'
 source './src/development_setup.sh'
 source './src/gaming_setup.sh'
+source './src/standard_setup.sh'
 
 
 
@@ -35,6 +36,7 @@ while true; do
     case $option in
         1) development_setup;;
         2) gaming_setup;;
+        3) standard_setup;;
         0) echo "Exiting..."; exit 0;;
         *) echo "Invalid input. Please try again.";;
     esac
