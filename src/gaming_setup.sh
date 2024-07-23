@@ -75,8 +75,18 @@ function installation() {
     sudo apt install -y mangohud vkbasalt goverlay 
 
     echo -e "\n\n"
-    echo "Installing GameMode..."
+    echo "Installing and configuring GameMode..."
     sudo apt install -y gamemode
+    echo '
+        [general]
+        reaper_freq = 5
+
+        [cpu]
+        governor = peerformance
+
+        [gpu]
+        apply_gpu_optimizations = true
+    ' >> ~./config/gamemode.ini
 
     echo -e "\n\n"
     echo "Installing RetroArch..."
