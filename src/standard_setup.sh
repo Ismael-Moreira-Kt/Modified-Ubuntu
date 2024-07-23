@@ -29,6 +29,10 @@ function installation() {
     echo -e "\n\n"
     echo "Installing Zoom..."
     flatpak install flathub us.zoom.Zoom
+
+    echo -e "\n\n"
+    echo "Installing Snapd..."
+    sudo apt install snapd
 }
 
 
