@@ -28,3 +28,8 @@ You will be presented with a menu to choose between the configuration options. A
 
 ## License
 This project is licensed under the MIT license. See the `LICENSE` file for more details.
+
+<br><br>
+
+## Contributions
+Contributions are welcome! If you want to contribute, feel free to open a fork of this repository, make your changes and send a pull request.
