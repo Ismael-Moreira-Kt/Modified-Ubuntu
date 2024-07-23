@@ -5,6 +5,11 @@ function preparing_installation() {
     sudo apt autoremove -y && sudo apt autoclean -y
 
     echo -e "\n\n"
+    echo "Installing basic tools..."
+    sudo apt install -y git curl gnupg build-essential cabextract p7zip unrar unzip wget zenity
+
+
+    echo -e "\n\n"
     echo "Adding repositories..."
     sudo add-apt-repository ppa:atareao/atareao
 
@@ -36,6 +41,11 @@ function installation() {
 
     echo "Installing Wine..."
     flatpak install flathub org.winehq.Wine
+
+    echo "Installing WineTricks..."
+    wget  https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
+    chmod +x winetricks 
+    sudo mv -v winetricks /usr/local/bin
 }
 
 
