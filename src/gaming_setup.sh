@@ -13,6 +13,7 @@ function preparing_installation() {
     sudo add-apt-repository ppa:atareao/atareao
     sudo add-apt-repository ppa:pipewire-debian/pipewire-upstream
     sudo add-apt-repository ppa:flexiondotorg/mangohud 
+    sudo add-apt-repository ppa:libretro/stable
 
     echo -e "\n\n"
     echo "Installing snap..."
@@ -76,6 +77,10 @@ function installation() {
     echo -e "\n\n"
     echo "Installing GameMode"
     sudo apt install -y gamemode
+
+    echo -e "\n\n"
+    echo "Installing RetroArch"
+    sudo apt install -y retroarch
 }
 
 
