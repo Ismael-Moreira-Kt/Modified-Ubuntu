@@ -37,6 +37,10 @@ function installation() {
     echo -e "\n\n"
     echo "Installing Telegram..."
     sudo snap install telegram-desktop
+
+    echo -e "\n\n"
+    echo "Installing Gnome Calendar..."
+    flatpak install flathub org.gnome.Calendar
 }
 
 
