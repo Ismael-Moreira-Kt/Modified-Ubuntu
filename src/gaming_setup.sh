@@ -75,6 +75,23 @@ function installation() {
     sudo apt install -y mangohud vkbasalt goverlay 
 
     echo -e "\n\n"
+    echo "Configuring MangoHud..."
+    mkdir -p ~/.config/MangoHud
+    echo '
+        fps
+        cpu_temp
+        gpu_temp
+        vram
+        ram
+        cpu_load
+        gpu_load
+
+        font_size=24
+        position=top-right
+        theme=legacy
+    ' >> ~/.config/MangoHud/MangoHud.conf
+
+    echo -e "\n\n"
     echo "Installing and configuring GameMode..."
     sudo apt install -y gamemode
     echo '
