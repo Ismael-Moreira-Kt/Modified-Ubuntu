@@ -45,6 +45,10 @@ function installation() {
     echo -e "\n\n"
     echo "Installing Gnome Contacts..."
     flatpak install flathub org.gnome.Contacts
+
+    echo -e "\n\n"
+    echo "Installing KeePassXC..."
+    flatpak install flathub org.keepassxc.KeePassXC
 }
 
 
