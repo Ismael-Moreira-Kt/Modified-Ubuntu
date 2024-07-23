@@ -93,6 +93,10 @@ function installation() {
     echo -e "\n\n"
     echo "Installing PCSX2..."
     flatpak install flathub net.pcsx2.PCSX2
+
+    echo -e "\n\n"
+    echo "Installing Discord..."
+    flatpak install flathub com.discordapp.Discord
 }
 
 
