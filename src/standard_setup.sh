@@ -57,6 +57,10 @@ function installation() {
     echo -e "\n\n"
     echo "Installing GIMP..."
     flatpak install flathub org.gimp.GIMP
+
+    echo -e "\n\n"
+    echo "Installing Inkscape..."
+    flatpak install flathub org.inkscape.Inkscape
 }
 
 
