@@ -12,6 +12,11 @@ function installation() {
     echo "Updating the package list..."
     sudo apt update -y && sudo apt upgrade -y 
     sudo apt autoremove -y && sudo apt autoclean -y
+
+    echo -e "\n\n"
+    echo "Installing flatpak..."
+    sudo apt install -y flatpak
+    flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 }
 
 
