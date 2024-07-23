@@ -25,6 +25,10 @@ function installation() {
     echo -e "\n\n"
     echo "Installing Thunderbird..."
     flatpak install flathub org.mozilla.Thunderbird
+
+    echo -e "\n\n"
+    echo "Installing Zoom..."
+    flatpak install flathub us.zoom.Zoom
 }
 
 
