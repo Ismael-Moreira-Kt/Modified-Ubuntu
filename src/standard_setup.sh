@@ -77,6 +77,10 @@ function installation() {
     echo -e "\n\n"
     echo "Installing Deja Dup..."
     sudo snap install deja-dup --classic
+
+    echo -e "\n\n"
+    echo "Installing Dropbox..."
+    flatpak install flathub com.dropbox.Client
 }
 
 
