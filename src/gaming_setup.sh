@@ -8,11 +8,11 @@ function preparing_installation() {
     echo "Installing basic tools..."
     sudo apt install -y git curl gnupg build-essential cabextract p7zip unrar unzip wget zenity
 
-
     echo -e "\n\n"
     echo "Adding repositories..."
     sudo add-apt-repository ppa:atareao/atareao
     sudo add-apt-repository ppa:pipewire-debian/pipewire-upstream
+    sudo add-apt-repository ppa:flexiondotorg/mangohud 
 
     echo -e "\n\n"
     echo "Installing snap..."
@@ -68,6 +68,10 @@ function installation() {
     systemctl --user mask pulseaudio.service pulseaudio.socket
     systemctl --user enable pipewire.socket pipewire-pulse.socket
     systemctl --user start pipewire.socket pipewire-pulse.socket
+
+    echo -e "\n\n"
+    echo "Installing Goverlay, Vkbaslt and MangoHud..."
+    sudo apt install -y mangohud vkbasalt goverlay 
 }
 
 
