@@ -65,6 +65,10 @@ function installation() {
     echo -e "\n\n"
     echo "Installing VLC..."
     flatpak install flathub org.videolan.VLC
+
+    echo -e "\n\n"
+    echo "Installing Spotify..."
+    flatpak install flathub com.spotify.Client
 }
 
 
