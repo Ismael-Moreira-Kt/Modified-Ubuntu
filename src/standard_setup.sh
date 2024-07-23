@@ -53,6 +53,10 @@ function installation() {
     echo -e "\n\n"
     echo "Installing Okular..."
     flatpak install flathub org.kde.okular
+
+    echo -e "\n\n"
+    echo "Installing GIMP..."
+    flatpak install flathub org.gimp.GIMP
 }
 
 
