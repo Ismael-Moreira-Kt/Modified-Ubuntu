@@ -75,12 +75,16 @@ function installation() {
     sudo apt install -y mangohud vkbasalt goverlay 
 
     echo -e "\n\n"
-    echo "Installing GameMode"
+    echo "Installing GameMode..."
     sudo apt install -y gamemode
 
     echo -e "\n\n"
-    echo "Installing RetroArch"
+    echo "Installing RetroArch..."
     sudo apt install -y retroarch
+
+    echo -e "\n\n"
+    echo "Installing PPSSPP..."
+    flatpak install flathub org.ppsspp.PPSSPP
 }
 
 
