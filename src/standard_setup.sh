@@ -69,6 +69,14 @@ function installation() {
     echo -e "\n\n"
     echo "Installing Spotify..."
     flatpak install flathub com.spotify.Client
+
+    echo -e "\n\n"
+    echo "Installing Redshift..."
+    sudo apt install -y redshift redshift-gtk
+
+    echo -e "\n\n"
+    echo "Installing Deja Dup..."
+    sudo snap install deja-dup --classic
 }
 
 
