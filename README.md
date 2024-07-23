@@ -1,0 +1,2 @@
+# Modified Ubuntu
+This project offers a comprehensive set of Bash scripts to quickly configure an Ubuntu system for general use, development or gaming. The scripts automate the installation of essential tools and applications, making it easy to customize the environment.
