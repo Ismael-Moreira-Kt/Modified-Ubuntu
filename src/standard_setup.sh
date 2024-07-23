@@ -1,8 +1,18 @@
-function preparing_installation() { }
+function preparing_installation() { 
+    echo -e "\n\n"
+    echo "Updating the package list..."
+    sudo apt update -y && sudo apt upgrade -y 
+    sudo apt autoremove -y && sudo apt autoclean -y
+}
 
 
 
-function installation() { }
+function installation() { 
+    echo -e "\n\n"
+    echo "Updating the package list..."
+    sudo apt update -y && sudo apt upgrade -y 
+    sudo apt autoremove -y && sudo apt autoclean -y
+}
 
 
 
