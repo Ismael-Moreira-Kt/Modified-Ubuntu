@@ -23,3 +23,8 @@ To start the setup, run the main script:
 ```
 
 You will be presented with a menu to choose between the configuration options. After selecting an option, the corresponding script will be executed.
+
+<br><br>
+
+## License
+This project is licensed under the MIT license. See the `LICENSE` file for more details.
