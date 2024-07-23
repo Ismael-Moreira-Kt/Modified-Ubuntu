@@ -85,6 +85,10 @@ function installation() {
     echo -e "\n\n"
     echo "Installing PPSSPP..."
     flatpak install flathub org.ppsspp.PPSSPP
+
+    echo -e "\n\n"
+    echo "Installing Lime3DS..."
+    flatpak install flathub io.github.lime3ds.Lime3DS
 }
 
 
