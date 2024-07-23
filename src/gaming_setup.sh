@@ -97,6 +97,10 @@ function installation() {
     echo -e "\n\n"
     echo "Installing Discord..."
     flatpak install flathub com.discordapp.Discord
+
+    echo -e "\n\n"
+    echo "Installing AntiMicroX..."
+    flatpak install flathub io.github.antimicrox.antimicrox
 }
 
 
