@@ -41,6 +41,10 @@ function installation() {
     echo -e "\n\n"
     echo "Installing Gnome Calendar..."
     flatpak install flathub org.gnome.Calendar
+
+    echo -e "\n\n"
+    echo "Installing Gnome Contacts..."
+    flatpak install flathub org.gnome.Contacts
 }
 
 
