@@ -33,6 +33,9 @@ function installation() {
 
     echo "Installing Lutris..."
     flatpak install flathub net.lutris.Lutris
+
+    echo "Installing Wine..."
+    flatpak install flathub org.winehq.Wine
 }
 
 
