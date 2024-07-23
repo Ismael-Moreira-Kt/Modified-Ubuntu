@@ -81,6 +81,10 @@ function installation() {
     echo -e "\n\n"
     echo "Installing Dropbox..."
     flatpak install flathub com.dropbox.Client
+
+    echo -e "\n\n"
+    echo "Installing BleachBit..."
+    flatpak install flathub org.bleachbit.BleachBit
 }
 
 
